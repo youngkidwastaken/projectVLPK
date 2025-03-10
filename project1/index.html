@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookBuddy - Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="login.html">Вход</a></li>
+                <li><a href="register.html">Регистрация</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Добро пожаловать в BookBuddy</h1>
+        
+        <section id="search">
+            <h2>Поиск книг</h2>
+            <form action="catalog.html" method="get">
+                <input type="text" name="query" placeholder="Введите название книги или автора">
+                <button type="submit">Поиск</button>
+            </form>
+        </section>
+
+        <section id="popular-books">
+            <h2>Популярные книги</h2>
+            <div class="book-list">
+                <!-- Здесь будет список популярных книг, загруженный с помощью JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 BookBuddy. Все права защищены.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookBuddy - Каталог книг</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="login.html">Вход</a></li>
+                <li><a href="register.html">Регистрация</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Каталог книг</h1>
+        
+        <section id="filters">
+            <h2>Фильтры</h2>
+            <form id="filter-form">
+                <label for="genre">Жанр:</label>
+                <select id="genre" name="genre">
+                    <option value="">Все жанры</option>
+                    <option value="fiction">Художественная литература</option>
+                    <option value="non-fiction">Нон-фикшн</option>
+                    <option value="science">Наука</option>
+                    <option value="history">История</option>
+                </select>
+                
+                <label for="sort">Сортировать по:</label>
+                <select id="sort" name="sort">
+                    <option value="popularity">Популярности</option>
+                    <option value="title">Названию</option>
+                    <option value="author">Автору</option>
+                    <option value="date">Дате публикации</option>
+                </select>
+                
+                <button type="submit">Применить</button>
+            </form>
+        </section>
+
+        <section id="book-list">
+            <h2>Список книг</h2>
+            <div class="book-grid">
+                <!-- Здесь будет отображаться список книг, загруженный с помощью JavaScript -->
+            </div>
+        </section>
+
+        <div id="pagination">
+            <!-- Здесь будут элементы пагинации, добавленные с помощью JavaScript -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 BookBuddy. Все права защищены.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/catalog.js"></script>
+</body>
+</html>

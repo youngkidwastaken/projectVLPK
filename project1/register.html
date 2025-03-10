@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookBuddy - Регистрация</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="login.html">Вход</a></li>
+                <li><a href="register.html">Регистрация</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Регистрация</h1>
+        
+        <section id="registration-form">
+            <form id="register" action="register.php" method="post">
+                <div class="form-group">
+                    <label for="username">Имя пользователя:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirm-password">Подтвердите пароль:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="birth-date">Дата рождения:</label>
+                    <input type="date" id="birth-date" name="birth-date">
+                </div>
+                
+                <div class="form-group">
+                    <label for="favorite-genre">Любимый жанр:</label>
+                    <select id="favorite-genre" name="favorite-genre">
+                        <option value="">Выберите жанр</option>
+                        <option value="fiction">Художественная литература</option>
+                        <option value="non-fiction">Нон-фикшн</option>
+                        <option value="science">Наука</option>
+                        <option value="history">История</option>
+                        <option value="fantasy">Фэнтези</option>
+                        <option value="romance">Романтика</option>
+                        <option value="mystery">Детектив</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="terms" name="terms" required>
+                        Я согласен с <a href="terms.html" target="_blank">условиями использования</a> и <a href="privacy.html" target="_blank">политикой конфиденциальности</a>
+                    </label>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit">Зарегистрироваться</button>
+                </div>
+            </form>
+        </section>
+        
+        <section id="social-registration">
+            <h2>Или зарегистрируйтесь через:</h2>
+            <div class="social-buttons">
+                <button class="social-button facebook">Facebook</button>
+                <button class="social-button google">Google</button>
+                <button class="social-button twitter">Twitter</button>
+            </div>
+        </section>
+        
+        <p>Уже есть аккаунт? <a href="login.html">Войдите здесь</a></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 BookBuddy. Все права защищены.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>

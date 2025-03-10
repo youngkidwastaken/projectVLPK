@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookBuddy - Личный кабинет</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="profile.html">Личный кабинет</a></li>
+                <li><a href="logout.html">Выход</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Личный кабинет</h1>
+        
+        <section id="user-info">
+            <h2>Информация о пользователе</h2>
+            <div id="profile-picture">
+                <img src="" alt="Фото профиля" id="user-avatar">
+                <button id="change-avatar">Изменить фото</button>
+            </div>
+            <form id="user-info-form">
+                <label for="username">Имя пользователя:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="full-name">Полное имя:</label>
+                <input type="text" id="full-name" name="full-name">
+                
+                <label for="birth-date">Дата рождения:</label>
+                <input type="date" id="birth-date" name="birth-date">
+                
+                <label for="favorite-genre">Любимый жанр:</label>
+                <select id="favorite-genre" name="favorite-genre">
+                    <option value="">Выберите жанр</option>
+                    <option value="fiction">Художественная литература</option>
+                    <option value="non-fiction">Нон-фикшн</option>
+                    <option value="science">Наука</option>
+                    <option value="history">История</option>
+                </select>
+                
+                <button type="submit">Сохранить изменения</button>
+            </form>
+        </section>
+        
+        <section id="reading-stats">
+            <h2>Статистика чтения</h2>
+            <p>Книг прочитано: <span id="books-read">0</span></p>
+            <p>Книг в списке желаемого: <span id="books-wishlist">0</span></p>
+            <p>Отзывов написано: <span id="reviews-written">0</span></p>
+        </section>
+        
+        <section id="change-password">
+            <h2>Изменить пароль</h2>
+            <form id="password-form">
+                <label for="current-password">Текущий пароль:</label>
+                <input type="password" id="current-password" name="current-password" required>
+                
+                <label for="new-password">Новый пароль:</label>
+                <input type="password" id="new-password" name="new-password" required>
+                
+                <label for="confirm-password">Подтвердите новый пароль:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                
+                <button type="submit">Изменить пароль</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 BookBuddy. Все права защищены.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+</html>

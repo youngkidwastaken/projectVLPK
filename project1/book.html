@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookBuddy - Информация о книге</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="login.html">Вход</a></li>
+                <li><a href="register.html">Регистрация</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="book-details">
+            <div class="book-cover">
+                <img src="" alt="Обложка книги" id="book-cover">
+            </div>
+            <div class="book-info">
+                <h1 id="book-title"></h1>
+                <p id="book-author"></p>
+                <p id="book-genre"></p>
+                <p id="book-publish-date"></p>
+                <p id="book-isbn"></p>
+                <div id="book-rating"></div>
+            </div>
+        </section>
+
+        <section id="book-description">
+            <h2>Описание</h2>
+            <p id="book-description-text"></p>
+        </section>
+
+        <section id="user-actions">
+            <button id="add-to-read">Добавить в прочитанные</button>
+            <button id="add-to-wishlist">Добавить в список желаемого</button>
+            <button id="write-review">Написать отзыв</button>
+        </section>
+
+        <section id="reviews">
+            <h2>Отзывы</h2>
+            <div id="review-list">
+                <!-- Здесь будут отображаться отзывы, загруженные с помощью JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 BookBuddy. Все права защищены.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/book.js"></script>
+</body>
+</html>

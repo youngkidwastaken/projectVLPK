@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookBuddy - Мои книги</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="profile.html">Личный кабинет</a></li>
+                <li><a href="my_books.html">Мои книги</a></li>
+                <li><a href="logout.html">Выход</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Мои книги</h1>
+        
+        <section id="reading-lists">
+            <h2>Списки чтения</h2>
+            <div class="list-tabs">
+                <button class="tab-button active" data-tab="read">Прочитанные</button>
+                <button class="tab-button" data-tab="reading">Читаю сейчас</button>
+                <button class="tab-button" data-tab="to-read">Хочу прочитать</button>
+            </div>
+            
+            <div id="read" class="tab-content active">
+                <h3>Прочитанные книги</h3>
+                <div class="book-list" id="read-books">
+                    <!-- Здесь будет список прочитанных книг -->
+                </div>
+            </div>
+            
+            <div id="reading" class="tab-content">
+                <h3>Читаю сейчас</h3>
+                <div class="book-list" id="currently-reading">
+                    <!-- Здесь будет список книг, которые читаются в данный момент -->
+                </div>
+            </div>
+            
+            <div id="to-read" class="tab-content">
+                <h3>Хочу прочитать</h3>
+                <div class="book-list" id="to-read-books">
+                    <!-- Здесь будет список книг, которые пользователь хочет прочитать -->
+                </div>
+            </div>
+        </section>
+        
+        <section id="reading-progress">
+            <h2>Прогресс чтения</h2>
+            <div id="progress-chart">
+                <!-- Здесь будет график прогресса чтения -->
+            </div>
+            <p>Книг прочитано в этом году: <span id="books-read-this-year">0</span></p>
+            <p>Страниц прочитано в этом году: <span id="pages-read-this-year">0</span></p>
+        </section>
+        
+        <section id="reading-challenges">
+            <h2>Вызовы по чтению</h2>
+            <div id="current-challenge">
+                <h3>Текущий вызов</h3>
+                <p>Цель: прочитать <span id="challenge-goal">0</span> книг в этом году</p>
+                <p>Прогресс: <span id="challenge-progress">0</span> книг</p>
+                <div id="challenge-progress-bar"></div>
+            </div>
+            <button id="set-new-challenge">Установить новый вызов</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 BookBuddy. Все права защищены.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/my_books.js"></script>
+</body>
+</html>

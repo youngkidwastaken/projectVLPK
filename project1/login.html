@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookBuddy - Вход</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="login.html">Вход</a></li>
+                <li><a href="register.html">Регистрация</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Вход в систему</h1>
+        
+        <section id="login-form">
+            <form id="login" action="login.php" method="post">
+                <div class="form-group">
+                    <label for="username">Имя пользователя или Email:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="remember-me" name="remember-me">
+                        Запомнить меня
+                    </label>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit">Войти</button>
+                </div>
+            </form>
+            
+            <p><a href="forgot-password.html">Забыли пароль?</a></p>
+        </section>
+        
+        <section id="social-login">
+            <h2>Или войдите через:</h2>
+            <div class="social-buttons">
+                <button class="social-button facebook">Facebook</button>
+                <button class="social-button google">Google</button>
+                <button class="social-button twitter">Twitter</button>
+            </div>
+        </section>
+        
+        <p>Нет аккаунта? <a href="register.html">Зарегистрируйтесь здесь</a></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 BookBuddy. Все права защищены.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
